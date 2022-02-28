@@ -1,7 +1,19 @@
 #!pip install qwikidata
+import csv
 import pprint
 import requests
 from qwikidata.sparql  import return_sparql_query_results
+
+
+with open('wordpressphoto_data.csv', encoding='utf-8') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=';')
+    fotografi= []
+    for row in csv_reader:
+        if row[5] != "photographer" and row[5] not in fotografi:
+            fotografi.append(row[5])
+
+        
+    
 
 pp = pprint.PrettyPrinter(indent=1)
 
@@ -43,7 +55,7 @@ def wikidata_reconciliation(query, q_class=None):
             print( 'no results matching the query string')
 
 
-fotografi = ["Mads Nissen", "Antonio Faccilongo"]
+
 
 wikidata_reconciliation(fotografi, "Q5") 
 #passare lista fotografi unici
