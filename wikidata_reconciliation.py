@@ -3,6 +3,7 @@ import csv
 import pprint
 import requests
 from qwikidata.sparql  import return_sparql_query_results
+from soupsieve import match
 
 
 with open('wordpressphoto_data.csv', encoding='utf-8') as csv_file:
@@ -12,16 +13,15 @@ with open('wordpressphoto_data.csv', encoding='utf-8') as csv_file:
         if row[5] != "photographer" and row[5] not in fotografi:
             fotografi.append(row[5])
 
-        
-    
+print(len(fotografi))
 
 pp = pprint.PrettyPrinter(indent=1)
 
 def wikidata_reconciliation(query, q_class=None):
-    print(query)
+    match = 0
+    no_match = 0
     """ query wd apis and print in a json file the results of reconciliation """
     for q in query:
-        print(q)
         API_WD = "https://www.wikidata.org/w/api.php"
         params = {
             'action': 'wbsearchentities',
@@ -32,7 +32,7 @@ def wikidata_reconciliation(query, q_class=None):
         
         # query wd API    
         r = requests.get(API_WD, params = params).json() 
-        pp.pprint(r) # the response
+        # pp.pprint(r) # the response
         
         # iterate over results (if there is any)
         if 'search' in r and len(r['search']) >= 1:
@@ -43,19 +43,23 @@ def wikidata_reconciliation(query, q_class=None):
                 
                 # query WD endpoint this time!
                 res = return_sparql_query_results(query_string) 
-                print("\n my string:", query, "\n the query to WD endpoint:", query_string, "\n the result:",res)
+                # print("\n my string:", query, "\n the query to WD endpoint:", query_string, "\n the result:",res)
                 
                 if res["boolean"] == True: 
-                    print( r['search'][0]['title'] , 'the class matches :)')
+                    # print( r['search'][0]['title'] , 'the class matches :)')
+                    match += 1
                 else:
                     print( r['search'][0]['title'] , 'the class does not match :(')
+                    
             else:
                 print( r['search'][0]['title'] , 'no class was given')
         else:
-            print( 'no results matching the query string')
+            # print( 'no results matching the query string')
+            no_match += 1
+
+    print(match)
+    print(no_match)
 
 
-
-
-wikidata_reconciliation(fotografi, "Q5") 
+wikidata_reconciliation(fotografi[120:140], "Q5") 
 #passare lista fotografi unici
