@@ -63,3 +63,4 @@ def wikidata_reconciliation(query, q_class=None):
 
 wikidata_reconciliation(fotografi[120:140], "Q5") 
 #passare lista fotografi unici
+
