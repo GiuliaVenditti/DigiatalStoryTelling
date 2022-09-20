@@ -550,7 +550,7 @@ scrollbar-width: none;  /* Firefox */
   padding-left: 7rem;
   position: fixed;
   
-  background-color: #21252900;
+  background-color: #2125297a;
   top: 0;
   right: 0;
   left: 0;
@@ -563,7 +563,7 @@ scrollbar-width: none;  /* Firefox */
   padding-left: 7rem;
   position: fixed;
   
-  background-color: #2b436a94;
+  background-color: #2b436a00;
   top: 0;
   padding-right: 3em;
   padding-bottom: 3em;
@@ -624,13 +624,40 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .navbar-brand{
-  color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
 }
 
 
 
 
-/* 
-h1:hover {
-  background-color: yellow;
-} */
+/* BUTTONS */
+
+.icon-button{
+  margin-top: 3em;
+  background-color: rgba(0, 0, 0, 0);
+  border: none !important;
+  filter: invert(47%) sepia(89%) saturate(2476%) hue-rotate(138deg) brightness(90%) contrast(50%);
+}
+
+.text-button{
+  
+  position: fixed;
+  right: 3rem;
+  margin-top: 3.5em;
+  border-radius: .25rem!important;
+  background-color:  rgb(68, 153, 136) !important;
+  border: none !important;
+
+}
+
+.container-nav{
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  
+  width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
