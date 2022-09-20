@@ -132,7 +132,7 @@ body{
 /* Photos background */
 
 .intro-slide {
-  background-image: url('imgs/brett-jordan-CsZQ50xO35I-unsplash.jpg');
+
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -149,7 +149,7 @@ body{
 }
 
 .second-slide {
-  background-image: url('imgs/erik-mclean-27kCu7bXGEI-unsplash.jpg');
+
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -162,7 +162,7 @@ body{
 }
 
 .carousel0-slide{
-  background-image: url('imgs/brett-jordan-CsZQ50xO35I-unsplash.jpg');
+
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -175,7 +175,7 @@ body{
 }
 
 .carousel1-slide{
-  background-image: url('imgs/jonathan-cooper-OOKnZA6nhqA-unsplash.jpg');
+
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -188,7 +188,7 @@ body{
 }
 
 .carousel2-slide{
-  background-image: url('imgs/miika-laaksonen-nUL9aPgGvgM-unsplash.jpg');
+ 
   min-width: 70%;
   width: 100vw;
   height: 100vh;
@@ -202,7 +202,7 @@ body{
 }
 
 .carousel3-slide{
-  background-image: url('imgs/dev-d2Py_uhXJQo-unsplash.jpg');
+
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -216,7 +216,7 @@ body{
 
 
 .framework-slide{
-  background-image: url('frmrk/FRAMEWORK.jpg');
+
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -540,10 +540,6 @@ scrollbar-width: none;  /* Firefox */
   display: none;
 }
     
-.invisiDIV:hover + .hide {
-  display: block;
-  color: red;
-}
 
 .lower_nav{
   height: 11rem;
@@ -554,12 +550,27 @@ scrollbar-width: none;  /* Firefox */
   padding-left: 7rem;
   position: fixed;
   
-  background-color: #212529a1;
+  background-color: #21252900;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 1030;
+}
+
+.icon_box{
+  padding-top: 7rem;
+  padding-left: 7rem;
+  position: fixed;
+  
+  background-color: #2b436a94;
+  top: 0;
+  padding-right: 3em;
+  padding-bottom: 3em;
+  left: 0;
+
+  z-index: 1040;
+
 }
 
 .upper_title{
@@ -576,11 +587,6 @@ scrollbar-width: none;  /* Firefox */
   z-index: 1030;
 }
 
-  
-.upper_title:hover + .upper_nav {
-  
-  background-color: red;
-}
 
 .pb {
   margin-bottom: 8rem;
@@ -617,5 +623,14 @@ scrollbar-width: none;  /* Firefox */
   margin-top: 2em;
 }
 
+.navbar-brand{
+  color: rgba(255, 255, 255, 0);
+}
 
 
+
+
+/* 
+h1:hover {
+  background-color: yellow;
+} */
