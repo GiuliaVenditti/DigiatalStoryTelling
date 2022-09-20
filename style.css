@@ -534,8 +534,8 @@ scrollbar-width: none;  /* Firefox */
   margin-bottom: 2vw;
 }
 
-/* progress bar*/
 
+/* navs*/
 .hide {
   display: none;
 }
@@ -558,21 +558,6 @@ scrollbar-width: none;  /* Firefox */
   z-index: 1030;
 }
 
-.icon_box{
-  padding-top: 7rem;
-  padding-left: 7rem;
-  position: fixed;
-  
-  background-color: #2b436a00;
-  top: 0;
-  padding-right: 3em;
-  padding-bottom: 3em;
-  left: 0;
-
-  z-index: 1040;
-
-}
-
 .upper_title{
   padding-top: 7rem;
   padding-left: 7rem;
@@ -588,6 +573,10 @@ scrollbar-width: none;  /* Firefox */
 }
 
 
+
+
+
+/* progress bar*/
 .pb {
   margin-bottom: 8rem;
   position: fixed;
@@ -598,6 +587,26 @@ scrollbar-width: none;  /* Firefox */
   bottom: 0;
   
   z-index: 1040;
+}
+
+
+
+/* icons*/
+
+.icon_box{
+  padding-top: 3rem;
+  padding-left: 3rem;
+  
+  position: fixed;
+  
+  background-color: #2b436a00;
+  top: 0;
+  padding-right: 3em;
+  padding-bottom: 3em;
+  left: 0;
+
+  z-index: 1040;
+
 }
 
 .circle {
@@ -633,11 +642,16 @@ scrollbar-width: none;  /* Firefox */
 /* BUTTONS */
 
 .icon-button{
-  margin-top: 3em;
-  background-color: rgba(0, 0, 0, 0);
+  
+  background-color: rgba(94, 51, 51, 0);
   border: none !important;
   filter: invert(47%) sepia(89%) saturate(2476%) hue-rotate(138deg) brightness(90%) contrast(50%);
 }
+
+.icon-low-nav{
+  margin-top: 3em;
+}
+
 
 .text-button{
   
