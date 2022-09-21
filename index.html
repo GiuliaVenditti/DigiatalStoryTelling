@@ -27,7 +27,8 @@
 
 <nav class="icon_box" id="icon_box" >
   <button class="icon-button btn" onclick= "appear()">
-  <object  data="svgs\rectangle-shape-svgrepo-com.svg" class="green" id="rect" width="40" height="40"> </object>
+    <img src="svgs\rectangle-shape-svgrepo-com.svg" id="rect" class ="green" width="40" height="40">
+  
   <p class="text-white" id="watching"> Streamocracy </p>
 </button>
 </nav>
@@ -35,12 +36,14 @@
 <!-- upper nav-->
 
       <nav class="upper_nav hide" id="upper_nav" >
-        <div class="upper_title" id="upper_title">
+        <button class="title-button" onclick="disappear()">
+        <div class="upper_title" id="upper_title" >
         <a class="navbar-brand" href="#"></a>
-        <p class="navbar-brand" > You are watching</p> 
+        <p class="navbar-brand"> You are watching</p> 
         <h1 class="navbar-brand" id="navbar-brand" >STREAMOCRACY</h1>
         <h3 class="navbar-brand" >how streaming changed filmaking</h3>
       </div>
+    </button>
       </nav>
       
       
@@ -56,13 +59,16 @@
           
         
           <button class="play-button icon-button icon-low-nav btn">
-            <object data="svgs\play-svgrepo-com.svg" width="60" height="60"> </object>
+            <img src="svgs\play-svgrepo-com.svg"  width="60" height="60">
+            
          </button>
-          <button class="back-button icon-button icon-low-nav btn"  onclick="next()">
-            <object data="svgs\play-next-icon.svg" width="50" height="50"> </object>
+          <button class="back-button icon-button icon-low-nav btn" onclick="prevoius()"  >
+            <img src="svgs\play-next-icon.svg" id="previous" width="50" height="50" >
+            
          </button>
-         <button class="forward-button icon-button icon-low-nav btn" onclick="prevoius()" >
-          <object data="svgs\play-next-icon.svg" width="50" height="50"> </object>
+         <button class="forward-button icon-button icon-low-nav btn" onclick="next()" >
+          <img src="svgs\play-next-icon.svg"  width="50" height="50">
+          
        </button>
 
       
@@ -70,7 +76,8 @@
 
        <div class="dropdown">
         <button type="button" class="btn dropdown-toggle serie-button icon-button icon-low-nav" data-bs-toggle="dropdown">
-          <object data="svgs\stack-svgrepo-com.svg" width="60" height="60"> </object>
+          <img src="svgs\stack-svgrepo-com.svg"  width="60" height="60">
+          
         </button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Link 1</a></li>
@@ -108,51 +115,8 @@
                 </div>
                 <div class="center">
                 <button class="icon-button btn white" id="play" onclick = "play()">
-                  <svg class="svg-icon green"
-                  role="img"
-                  height="200"
-                  width="200"
-                  viewBox="0 0 200 200"
-                  aria-hidden="true"
-                  focusable="false"
-                  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve"
-   >
-                   
-                  <g>
-                  <path d="M413.974,71.026C368.171,25.225,307.274,0,242.5,0S116.829,25.225,71.026,71.026C25.225,116.829,0,177.726,0,242.5
-                  s25.225,125.671,71.026,171.474C116.829,459.775,177.726,485,242.5,485s125.671-25.225,171.474-71.026
-                  C459.775,368.171,485,307.274,485,242.5S459.775,116.829,413.974,71.026z M242.5,455C125.327,455,30,359.673,30,242.5
-                  S125.327,30,242.5,30S455,125.327,455,242.5S359.673,455,242.5,455z"/>
-                <polygon points="181.062,336.575 343.938,242.5 181.062,148.425 	"/>
-              </g><g></g><g> </g> <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-                </svg>
-                <!--  <object  data="svgs\play-svgrepo-com (1).svg" class="green" width="200" height="200"> </object>-->
+                  <img src="svgs\play-svgrepo-com (1).svg" alt="Kiwi standing on oval" id="play_big" width="400" height="400">
+                
               </button>
             </div>
             </div>

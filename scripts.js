@@ -33,7 +33,7 @@ window.onscroll = () => {
     document.getElementById("progress-bar").style.margin = '0rem 0rem 8rem 0rem';
   }
  */
-
+/* 
 const btn = document.getElementById('lower_nav');
 
 btn.addEventListener('mouseover', () => {
@@ -65,16 +65,32 @@ btn.addEventListener('mouseout', () => {
     }, 8000);
   });
  
-
+ */
 
 
   function appear() {
-    document.getElementById("upper_nav").classList.toggle("hide")
-    document.getElementById("watching").classList.toggle("hide")
+    document.getElementById("upper_nav").classList.remove("hide")
+    document.getElementById("watching").classList.add("hide")
     document.getElementById('container-nav').style.visibility = 'visible'
     document.getElementById('progress-bar').style.margin = '0rem 0rem 7rem 0rem';
     document.getElementById('circle').style.margin = '0rem 0rem 6.8rem 0rem';
   }
+
+ 
+
+   
+  function disappear() {
+    document.getElementById("upper_nav").classList.add("hide")
+    document.getElementById("watching").classList.remove("hide")
+    setTimeout(() => {
+    document.getElementById('container-nav').style.visibility = 'hidden'
+    document.getElementById('progress-bar').style.margin = '0rem 0rem 2rem 0rem';
+    document.getElementById('circle').style.margin = '0rem 0rem 1.8rem 0rem';
+  }, 8000);
+  }
+
+  document.getElementsByTagName("BODY")[0];
+  document.body.addEventListener('click', fn, true);  
   
  function play(){
   document.getElementById("navs").classList.toggle("hide")
@@ -101,7 +117,7 @@ function next() {
 function prevoius() {
   console.log("yyyyy")
   window.scrollBy({
-    top: -100,
+    top: -(window.innerHeight),
     left: 0,
     behavior: 'smooth'
   });

@@ -69,7 +69,7 @@ html {
 
 body{
   margin: 0;
-  font-family: 'ABeeZee', sans-serif !important; 
+  font-family: Arial, Helvetica, sans-serif !important; 
 }
 
 .v-child{
@@ -516,6 +516,10 @@ scrollbar-width: none;  /* Firefox */
 
 }
 
+#play:hover {
+  filter: invert(47%) sepia(89%) saturate(2476%) hue-rotate(138deg) brightness(90%) contrast(50%);
+}
+
 #rect{
   transform: rotate(90deg);
 }
@@ -561,9 +565,17 @@ scrollbar-width: none;  /* Firefox */
   margin: auto;
 }
 
+
+#previous{
+  transform: rotate(180deg);
+}
 /* BUTTONS */
 
-
+.title-button{
+  text-align: left;
+  border: none !important;
+  background-color: rgba(68, 153, 136, 0) !important;
+}
 
 .text-button{
   
@@ -602,4 +614,13 @@ scrollbar-width: none;  /* Firefox */
 
 .fix-svg {
   pointer-events: none;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+#lower_nav:hover, #container-nav:hover {
+  visibility: visible;
+ 
 }
