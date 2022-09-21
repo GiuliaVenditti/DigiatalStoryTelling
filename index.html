@@ -9,7 +9,7 @@
     <!-- base style -->
     <link rel="stylesheet" href="style.css"/>
     <!-- bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">\
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- meta info-->
     <title>The Incredible Digital Comic Library Framework</title>
     <meta name="description" content="A digital humanities project to propose a framework for semantic digital libraries dedicated to comic books." />
@@ -17,21 +17,24 @@
     <meta name="keywords" content="Digital Humanities, comics, semantic web" />
     
 </head>
-<body>
+<body id = "bod" class="no-scroll">
     <main>
-      
+<!-- navs-->
+
+  <div class="hide" id="navs" >  
 
 <!-- icon box-->
 
 <nav class="icon_box" id="icon_box" >
-  <button class=" icon-button">
-  <object data="svgs\menu-svgrepo-com.svg" width="40" height="40"> </object>
+  <button class="icon-button btn" onclick= "appear()">
+  <object  data="svgs\rectangle-shape-svgrepo-com.svg" class="green" id="rect" width="40" height="40"> </object>
+  <p class="text-white" id="watching"> Streamocracy </p>
 </button>
 </nav>
 
 <!-- upper nav-->
 
-      <nav class="upper_nav" id="upper_nav" >
+      <nav class="upper_nav hide" id="upper_nav" >
         <div class="upper_title" id="upper_title">
         <a class="navbar-brand" href="#"></a>
         <p class="navbar-brand" > You are watching</p> 
@@ -42,73 +45,144 @@
       
       
 <!-- lower nav  bg-dark navbar-dark-->
-      <nav class="navbar navbar-expand-sm  fixed-bottom lower_nav">
-        <div class="container-nav">
-          <div class="pb"></div>
-          <div class="circle"></div>
+      <nav class="navbar navbar-expand-sm fixed-bottom lower_nav" id="lower_nav">
+        <div class="contain">
+        <div class="pb" id="progress-bar"></div>
+
+          <div class="circle" id = "circle"></div>
+        </div>
+        <div class="container-nav" id="container-nav">
+
           
-          <button class="play-button icon-button">
+        
+          <button class="play-button icon-button icon-low-nav btn">
             <object data="svgs\play-svgrepo-com.svg" width="60" height="60"> </object>
          </button>
-          <button class="back-button icon-button">
+          <button class="back-button icon-button icon-low-nav btn"  onclick="next()">
             <object data="svgs\play-next-icon.svg" width="50" height="50"> </object>
          </button>
-         <button class="forward-button icon-button">
+         <button class="forward-button icon-button icon-low-nav btn" onclick="prevoius()" >
           <object data="svgs\play-next-icon.svg" width="50" height="50"> </object>
        </button>
-          <button class="serie-button icon-button">
-            <object data="svgs\stack-svgrepo-com.svg" width="60" height="60"> </object>
-         </button>
+
+      
+
+
+       <div class="dropdown">
+        <button type="button" class="btn dropdown-toggle serie-button icon-button icon-low-nav" data-bs-toggle="dropdown">
+          <object data="svgs\stack-svgrepo-com.svg" width="60" height="60"> </object>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+       
+         
          <button class="text-button btn text-center">
           <p> jump to the end</p> 
        </button>
           <a class="navbar-brand" href="#"></a>
         </div>
+      
+
       </nav>
 
-<!-- prova-->
+</div> 
      
 
     
 
 
 
- <!-- TITLE-->
+ <!-- COVERPAGE-->
 
-        <section class="v-child intro-slide">
-            <div class="flex-column container">
-                <div class="p-5 mb-2 coverpage   p-4 rounded cover-slide">
-                    <h1 class="text-center title1">STREAMOCRACY</h1>
+        <section class="v-child all-slide coverpage" id="slide1">
+            <div class="flex-column container ">
+                <div class="p-5 mb-2   p-4 ">
+                    <h1 class="text-center text-white title1 green">STREAMOCRACY</h1>
+                    <h3 class="text-center text-white ">How streaming changed filmaking</h3>
                     
                 </div>
-                
+                <div class="center">
+                <button class="icon-button btn white" id="play" onclick = "play()">
+                  <svg class="svg-icon green"
+                  role="img"
+                  height="200"
+                  width="200"
+                  viewBox="0 0 200 200"
+                  aria-hidden="true"
+                  focusable="false"
+                  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve"
+   >
+                   
+                  <g>
+                  <path d="M413.974,71.026C368.171,25.225,307.274,0,242.5,0S116.829,25.225,71.026,71.026C25.225,116.829,0,177.726,0,242.5
+                  s25.225,125.671,71.026,171.474C116.829,459.775,177.726,485,242.5,485s125.671-25.225,171.474-71.026
+                  C459.775,368.171,485,307.274,485,242.5S459.775,116.829,413.974,71.026z M242.5,455C125.327,455,30,359.673,30,242.5
+                  S125.327,30,242.5,30S455,125.327,455,242.5S359.673,455,242.5,455z"/>
+                <polygon points="181.062,336.575 343.938,242.5 181.062,148.425 	"/>
+              </g><g></g><g> </g> <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+                </svg>
+                <!--  <object  data="svgs\play-svgrepo-com (1).svg" class="green" width="200" height="200"> </object>-->
+              </button>
             </div>
+            </div>
+            
         </section>
 
  <!-- SLIDE 1-->
-        <section class="v-child first-slide ">
+        <section class="v-child all-slide" id="slide2">
             <div class="flex-column ">
                 
-                <div class="p-5 bg-body rounded   biblios-slide">
+                <div class="p-5   rounded   biblio-slide">
                     
                
             </div>
         </section>
 
     <!-- SLIDE 2  -->
-        <section class="v-child second-slide">
+        <section class="v-child all-slide" id="slide3">
             <div class="flex-column">
                 
-                <div class="  p-5 bg-body rounded   biblio-slide">
+                <div class="  p-5   rounded   biblio-slide">
                      </div>
             </div>
         </section>
 
      <!-- SLIDE 2 half-->
-     <section class="v-child second-half-slide">
+     <section class="v-child all-slide">
         <div class="flex-column">
             
-            <div class="  p-5 bg-body rounded   biblio-slide">
+            <div class="  p-5   rounded   biblio-slide">
                 
             </div>
         </div>
@@ -117,10 +191,10 @@
         <!-- SLIDE 3-->
         
 <!-- SLIDE 4-->
-<section class="v-child fourth-slide">
+<section class="v-child all-slide">
     <div class="flex-column">
         
-        <div class="  p-5 bg-body rounded   biblio-slide">
+        <div class="  p-5   rounded   biblio-slide">
             
         </div>
     </div>
@@ -130,9 +204,9 @@
         
 
 <!-- SLIDE 6 -->
-<section class="v-child sixth-slide">
+<section class="v-child all-slide">
     <div class=" flex-column">
-      <div class="  p-5 bg-body rounded   biblio-slide">
+      <div class="  p-5   rounded   biblio-slide">
             
       </div>
         
@@ -150,9 +224,9 @@
 
 
 <!-- SLIDE 9 -->
-<section class="v-child seventh-slide">
+<section class="v-child all-slide">
     <div class=" flex-column">
-      <div class="  p-5 bg-body rounded   biblio-slide">
+      <div class="  p-5   rounded   biblio-slide">
             
       </div>
         
@@ -166,7 +240,7 @@
 
 
 <!-- SLIDE 11 -->
-<section class="v-child eight-slide">
+<section class="v-child all-slide">
     <div class=" flex-column ">
         
         <div class=" p-5 rounded   biblio1-slide text-white">
@@ -272,7 +346,7 @@
 
 <!-- SLIDE 12-->
         <!-- team -->
-<section class="v-child sixth-slide">
+<section class="v-child all-slide">
     <div class=" flex-column biblio2-slide">
     <h2 class="text-center text-white team_title"> Meet the team</h2>
     <p class="text-white text-center">This project was created and presented as part of the requirements for the Semantic Digital Libraries course within the Digital Humanities & Digital Knowledge Master's at the University of Bologna, a/y 2021-2022.</p>
@@ -337,7 +411,7 @@
                     <h2 class="text-white text-center title-carousel ">Recommendations</h2>
                
                     <div class="carousel-item active">
-                        <div class="  p-5 bg-body rounded   inside-slide">
+                        <div class="  p-5   rounded   inside-slide">
                             <h2>DCM</h2>
                             <ul>
                                 <li>Implement use of generic bibliographic metadata standards, such as MARC, and dedicated ones, such as the Comic Book Ontology.</li>
@@ -351,7 +425,7 @@
                       </div>
 
                   <div class="carousel-item">
-                    <div class="  p-5 bg-body rounded   inside-slide">
+                    <div class="  p-5   rounded   inside-slide">
                         <h2> GCD</h2>
                         <ul>
                             <li>Align existing schema with LOD standards, such as Schema or DC, or with bibliographic standards.</li>
@@ -365,7 +439,7 @@
                   </div>
 
                   <div class="carousel-item"> 
-                    <div class="  p-5 bg-body rounded   inside-slide">
+                    <div class="  p-5   rounded   inside-slide">
                         
                         <h2>IA</h2>
                         <ul>
