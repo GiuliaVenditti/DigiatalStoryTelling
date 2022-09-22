@@ -9,7 +9,7 @@
 
 
 .title1{
-  margin-top: 5rem;
+  margin-top: 8%;
 
  
 }
@@ -140,18 +140,6 @@ body{
 
 
 
-/* Slides background */
-
-.all-slide {
-  background-color:#212529;
-}
-
-.coverpage{
-  background-image: url("svgs/jeremy-yap-J39X2xX_8CQ-unsplash2.jpg");
-  background-size:cover;
-  
-}
-
 
 
 /* links colors */ 
@@ -259,10 +247,23 @@ font-size: 12vw !important;
   margin-left: 15vw;
   margin-right: 15vw;
   overflow: scroll;
-  background-color: rgb(96, 97, 102);
+  background-color: #e9ecef;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%); 
   
 }
+
+/* Slides background */
+
+.all-slide {
+  background-color:#495057;
+}
+
+.coverpage{
+  background-image: url("svgs/jeremy-yap-J39X2xX_8CQ-unsplash2.jpg");
+  background-size:cover;
+  
+}
+
 
 
 
@@ -430,7 +431,82 @@ scrollbar-width: none;  /* Firefox */
 
 .lower_nav{
   height: 11rem;
+  
+  
 }
+
+/* anims */
+
+.hides {
+  /* display: none !important; */
+}
+
+  /* Anims */
+
+.lower_nav > .hides {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+   
+
+}
+
+.lower_nav:hover > .hides {
+   display: flex !important;
+   visibility: visible;
+   opacity: 1;
+   transition: visibility 1.5s, opacity 1.5s linear;
+}
+
+
+
+.lower_nav:hover .pb {
+  animation-name: lower;
+  animation-duration: 1s;
+  margin-bottom: 7rem;
+}
+
+.pb{
+  animation-name: out;
+  animation-duration: 1s;
+}
+
+.lower_nav:hover .circle {
+  animation-name: lowerc;
+  animation-duration: 1s;
+  margin-bottom: 6.8rem;
+  
+}
+
+.circle{
+  animation-name: outc;
+  animation-duration: 1s;
+}
+
+@keyframes lower {
+  from {margin-bottom: 2rem;}
+  to {margin-bottom: 7rem;}
+}
+
+@keyframes out {
+  from {margin-bottom: 7rem;}
+  to {margin-bottom: 2rem;}
+}
+
+@keyframes lowerc {
+  from {margin-bottom: 1.8rem;}
+  to {margin-bottom: 6.8rem;}
+}
+
+@keyframes outc {
+  from {margin-bottom: 6.8rem;}
+  to {margin-bottom: 1.8rem;}
+}
+
+
+
+
+
 
 .upper_nav{
   padding-top: 7rem;
@@ -496,6 +572,8 @@ scrollbar-width: none;  /* Firefox */
   left: 0;
   z-index: 1040;
 }
+/* #449988*/
+
 
 
 /* icons*/
@@ -578,7 +656,7 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .text-button{
-  
+  width: 8rem;
   position: fixed;
   right: 3rem;
   margin-top: 3.5em;
@@ -592,7 +670,7 @@ scrollbar-width: none;  /* Firefox */
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  visibility: hidden;
+  
   width: 100%;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
@@ -620,7 +698,4 @@ a:hover {
   background-color: yellow;
 }
 
-#lower_nav:hover, #container-nav:hover {
-  visibility: visible;
- 
-}
+

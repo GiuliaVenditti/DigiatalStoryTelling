@@ -66,19 +66,33 @@ btn.addEventListener('mouseout', () => {
   });
  
  */
+  const newspaperSpinning = [
+    { transform: 'rotate(0) scale(1)' },
+    { transform: 'rotate(360deg) scale(0)' }
+  ];
+  
+  const newspaperTiming = {
+    duration: 2000,
+    iterations: 1,
+  }
+  
+  const newspaper = document.querySelector(".newspaper");
+  
+  newspaper.addEventListener('click', () => {
+    newspaper.animate(newspaperSpinning, newspaperTiming);
+  });
 
 
-  function appear() {
+
+
+  /* function appear() {
     document.getElementById("upper_nav").classList.remove("hide")
     document.getElementById("watching").classList.add("hide")
-    document.getElementById('container-nav').style.visibility = 'visible'
+    document.getElementById('lower_nav').classList.add("hides")
     document.getElementById('progress-bar').style.margin = '0rem 0rem 7rem 0rem';
     document.getElementById('circle').style.margin = '0rem 0rem 6.8rem 0rem';
   }
 
- 
-
-   
   function disappear() {
     document.getElementById("upper_nav").classList.add("hide")
     document.getElementById("watching").classList.remove("hide")
@@ -87,7 +101,7 @@ btn.addEventListener('mouseout', () => {
     document.getElementById('progress-bar').style.margin = '0rem 0rem 2rem 0rem';
     document.getElementById('circle').style.margin = '0rem 0rem 1.8rem 0rem';
   }, 8000);
-  }
+  } */
 
   document.getElementsByTagName("BODY")[0];
   document.body.addEventListener('click', fn, true);  
