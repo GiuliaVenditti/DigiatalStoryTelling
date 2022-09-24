@@ -11,7 +11,7 @@ window.onscroll = () => {
     
     document.querySelector(
       ".pb"
-    ).style.background = `linear-gradient(to right, #498 ${scrollPercentRounded}%, #eee ${scrollPercentRounded}%)`;
+    ).style.background = `linear-gradient(to right, #fca311 ${scrollPercentRounded}%, rgb(238, 238, 238) ${scrollPercentRounded}%)`;
 
     document.querySelector(
       ".circle"
