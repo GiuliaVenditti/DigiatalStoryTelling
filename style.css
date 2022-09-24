@@ -172,9 +172,7 @@ body{
   }
 
 
-.coverpage{
-  padding-top: 20vh !important;
-}
+
 
 .title1{
 font-size: 10vw !important;
@@ -347,12 +345,6 @@ font-size: 12vw !important;
   background-color:#e1e1e1;
 }
 
-.coverpage{
-  background-image: url("svgs/jeremy-yap-J39X2xX_8CQ-unsplash2.jpg");
-  background-size:cover;
-  
-}
-
 
 
 
@@ -422,8 +414,16 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .coverpage{
-
   background-color:rgba(0, 0, 0, 0.729)
+}
+.coverpage{
+  padding-top: 20vh !important;
+  height: 100vh;
+}
+.coverpage{
+  background-image: url("svgs/jeremy-yap-J39X2xX_8CQ-unsplash2.jpg");
+  background-size:cover;
+  height: 100vh;
 }
 
 .icon_color{
@@ -780,10 +780,6 @@ filter:invert(47%) sepia(89%) saturate(2476%) hue-rotate(5deg) brightness(90%) c
 
 .fix-svg {
   pointer-events: none;
-}
-
-a:hover {
-  background-color: yellow;
 }
 
 
