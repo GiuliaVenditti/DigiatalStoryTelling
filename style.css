@@ -262,11 +262,13 @@ font-size: 12vw !important;
 } */
 
 .biblio-slide-l-trasp{
+  padding: 3rem;
+
   height: 60vh;
   width: 45vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  margin-right: 5vw;
+ 
   overflow: scroll;
   background-color: #f8f9fa00;
 
