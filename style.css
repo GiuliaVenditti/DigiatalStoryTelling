@@ -57,8 +57,11 @@ h2 {
 h5{
   font-size: 1.5rem !important;
 }
+/*SVG*/
 
-
+#stack {
+  fill: red;
+}
 
 /* body */ 
 
@@ -66,20 +69,21 @@ h5{
   box-sizing: border-box;
 }
 
-/* html {
+ html {
   scroll-snap-type: y mandatory;
 } 
 
 .snappy {
   scroll-snap-type: y mandatory;
 } 
- */
+ 
 body{
+  font-size: 1.2rem !important;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif !important; 
 }
 
-/* .v-child{
+.v-child{
   scroll-snap-align: center;
   scroll-snap-stop: always;
 
@@ -87,7 +91,7 @@ body{
   width: 100vw;
   display: flex;
 }
- */
+ 
 .v-child {
   -ms-overflow-style: none;  /* IE and Edge */
   -ms-overflow-scrollbar-width: none;  /* Firefox */
@@ -298,6 +302,8 @@ font-size: 12vw !important;
 
 .duble_content{
   display: flex;
+  padding-top:15vh;
+  padding-bottom:15vh;
 }
 
 .in-slide{
@@ -308,8 +314,8 @@ font-size: 12vw !important;
   padding-top: 5vw;
   padding-bottom: 10vw;
    /*background-color: #ffffff;*/
-  background-color: #e1e1e1;
- 
+  /*background-color: #e1e1e1;*/
+  background-color: #212529;
   
 }
 .paragrap-neutral{
@@ -326,12 +332,13 @@ font-size: 12vw !important;
   padding-top: 1.4vw;
   padding-bottom: 1vh;
   margin-bottom: 2vh;
-  background-color: #fca311;
-  box-shadow: 1rem 1rem 0rem rgb(0 0 0 / 18%);
+  /* background-color: #fca311;*/
+  background-color: #a0a3de;
+  /*box-shadow: 1rem 1rem 0rem rgb(0 0 0 / 18%);*/
 }
 
 .text-button{
-  background-color:  #fca311 !important;
+  background-color:  #a0a3de !important;
   color: black;
   
 /*  background-color:  rgb(68, 153, 136) !important; */
@@ -342,7 +349,8 @@ font-size: 12vw !important;
 .all-slide {
  /* background-color:#ffffff;*/
   /*background-color:#e9ecef;*/
-  background-color:#e1e1e1;
+  /*background-color:#e1e1e1;*/
+  background-color:#212529;
 }
 
 
@@ -417,7 +425,7 @@ scrollbar-width: none;  /* Firefox */
   background-color:rgba(0, 0, 0, 0.729)
 }
 .coverpage{
-  padding-top: 20vh !important;
+  padding-top: 10vh !important;
   height: 100vh;
 }
 .coverpage{
@@ -522,11 +530,11 @@ scrollbar-width: none;  /* Firefox */
   /* Anims */
 
 .lower_nav > .hides {
-  visibility: hidden;
+ visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
    
-
+  
 }
 
 .lower_nav:hover > .hides {
@@ -538,7 +546,7 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .lower_nav:hover{
-  background: #e1e1e1;
+  background: #212529;
   
 }
 
@@ -650,7 +658,7 @@ scrollbar-width: none;  /* Firefox */
   width: 17px;
   height: 17px;
   /*background: rgb(68, 153, 136);*/
-  background: #fca311;
+  background: rgb(160, 163, 222);
   border-radius: 50%;
   margin-bottom: 1.8rem;
   position: fixed;
@@ -682,7 +690,7 @@ scrollbar-width: none;  /* Firefox */
 }
 
 #play:hover {
-  filter: invert(47%) sepia(89%) saturate(2476%) hue-rotate(138deg) brightness(90%) contrast(50%);
+  filter: invert(100%) sepia(200%) saturate(2000%) hue-rotate(181deg) brightness(61%) contrast(330%);
 }
 
 #rect{
@@ -705,12 +713,14 @@ scrollbar-width: none;  /* Firefox */
 
 .icon-low-nav{
   margin-top: 3em;
-  filter:invert(100%) sepia(200%) saturate(2000%) hue-rotate(307deg) brightness(80%) contrast(150%);
+  /*filter:invert(100%) sepia(200%) saturate(2000%) hue-rotate(307deg) brightness(80%) contrast(150%);*/
+  filter: invert(100%) sepia(200%) saturate(2000%) hue-rotate(181deg) brightness(61%) contrast(330%);
   /* filter: invert(47%) sepia(89%) saturate(0%) hue-rotate(5deg) brightness(90%) contrast(50%);*/
   /*filter: invert(47%) sepia(89%) saturate(2476%) hue-rotate(5deg) brightness(90%) contrast(50%);*/
+}
 
-  
-  
+.purple{
+  filter: invert(100%) sepia(200%) saturate(2000%) hue-rotate(181deg) brightness(61%) contrast(330%);
 }
 
 .green{
