@@ -263,6 +263,7 @@ font-size: 12vw !important;
   
 } */
 
+/*
 .biblio-slide-l-trasp{
   padding: 3%;
 
@@ -276,13 +277,13 @@ font-size: 12vw !important;
 
   
 }
-
+ 
 .biblio-slide-r{
   height: 60vh;
     width: 45vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    /* margin-right: 5vw; */
+ 
     overflow: scroll;
     background-color: #f8f9fa;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
@@ -299,6 +300,46 @@ font-size: 12vw !important;
   background-color: #f8f9fa;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
 }
+*/
+
+
+.biblio-slide-l-trasp{
+  padding: 3%;
+
+  height: 60vh;
+  width: 45vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+ 
+  overflow: scroll;
+  background-color: #f8f9fa00;
+
+  
+}
+ 
+.biblio-slide-r{
+  height: 60vh;
+    width: 45vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+ 
+    overflow: scroll;
+  
+  
+  
+}
+
+.biblio-slide-l {
+  height: 60vh;
+  width: 45vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  overflow: scroll;
+
+ 
+}
+
 
 .duble_content{
   display: flex;
