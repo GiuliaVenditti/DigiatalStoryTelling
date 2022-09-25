@@ -1,6 +1,9 @@
 # Streaming/ocracy
 ## Has streaming services change the audio visual content production indutry?
 
+[Notebook](https://github.com/GiuliaVenditti/DigiatalStoryTelling/blob/main/notebook.ipynb) 
+[Website]()
+
 ## Abstract 
 
 Digitization, as one of the key outcomes of technological growth, has led to profound changes in entertainment, and therefore in the world of cinema, as well as in many other areas. As a result, the distribution and broadcasting strategy that Netflix brought to the market turned into an amazing success story in a very short period of time.
@@ -17,12 +20,13 @@ The project was built primarily using Python for data manipulation, Plotly for d
 
 ## Data
 
-* [Netflix's dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)(till 2021)
-* [Amazon prime's dataset](https://www.kaggle.com/datasets/shivamb/amazon-prime-movies-and-tv-shows)(till 2021)
+* [Netflix's dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows) (2008-2021)
+* [Amazon prime's dataset](https://www.kaggle.com/datasets/shivamb/amazon-prime-movies-and-tv-shows) (2008-2021)
 
 ## License
 
 Netflix's dataset is released under a [CCO License](https://creativecommons.org/publicdomain/zero/1.0/). 
 Amazon prime's dataset is released under a [CCO License](https://creativecommons.org/publicdomain/zero/1.0/).
+
 Manipulated data is released under a [CCO License](https://creativecommons.org/publicdomain/zero/1.0/).
 Project website and all related material uploaded to the GitHub repository are released under a [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/).
