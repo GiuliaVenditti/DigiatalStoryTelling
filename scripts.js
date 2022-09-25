@@ -11,13 +11,16 @@ window.onscroll = () => {
     
     document.querySelector(
       ".pb"
-    ).style.background = `linear-gradient(to right, #fca311 ${scrollPercentRounded}%, rgb(238, 238, 238) ${scrollPercentRounded}%)`;
+    ).style.background = `linear-gradient(to right, rgb(160, 163, 222) ${scrollPercentRounded}%, rgb(238, 238, 238) ${scrollPercentRounded}%)`;
 
     document.querySelector(
       ".circle"
     ).style.left = `${scrollPercentRounded}%`;
   };
 
+
+
+ 
 /* 
   document.getElementById("progress-bar").onmouseover = function() {mouseOver()};
   document.getElementById("progress-bar").onmouseout = function() {mouseOut()};
