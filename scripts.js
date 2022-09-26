@@ -13,8 +13,6 @@ window.onscroll = () => {
     console.log(winHeight)
     let scrollPercent = scrollTop / (docHeight - winHeight);
     let scrollPercentRounded = Math.round(scrollPercent * 100);
-    
-    
     document.querySelector(
       ".pb"
     ).style.background = `linear-gradient(to right, rgb(160, 163, 222) ${scrollPercentRounded}%, rgb(238, 238, 238) ${scrollPercentRounded}%)`;
@@ -22,15 +20,10 @@ window.onscroll = () => {
     document.querySelector(
       ".circle"
     ).style.left = `${scrollPercentRounded}%`;
-
-    if(scrollTop == 0){
-
-    }
-
   };
 
 
-  window.onscroll = () => {
+/*   window.onscroll = () => {
     let scrollTop = window.scrollY;
     if(scrollTop <= 10){
       document.getElementById("container-nav").classList.add("rehides")
@@ -41,13 +34,13 @@ window.onscroll = () => {
   };
 
 
-
+ */
  
 
 
   
 
- function play(){
+function play(){
   document.getElementById("navs").classList.toggle("hide")
   document.getElementById("bod").classList.toggle("no-scroll")
   
