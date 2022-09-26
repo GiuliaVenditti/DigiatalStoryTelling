@@ -3,8 +3,14 @@ console.log("hey")
 
 window.onscroll = () => {
     let scrollTop = window.scrollY;
+    console.log("scrollTop")
+    console.log(scrollTop)
     let docHeight = document.body.offsetHeight;
+    console.log("docHeight")
+    console.log(docHeight)
     let winHeight = window.innerHeight;
+    console.log("winHeight")
+    console.log(winHeight)
     let scrollPercent = scrollTop / (docHeight - winHeight);
     let scrollPercentRounded = Math.round(scrollPercent * 100);
     
@@ -16,6 +22,22 @@ window.onscroll = () => {
     document.querySelector(
       ".circle"
     ).style.left = `${scrollPercentRounded}%`;
+
+    if(scrollTop == 0){
+
+    }
+
+  };
+
+
+  window.onscroll = () => {
+    let scrollTop = window.scrollY;
+    if(scrollTop <= 10){
+      document.getElementById("container-nav").classList.add("rehides")
+    }
+    if(scrollTop >= 900){
+      document.getElementById("container-nav").classList.remove("rehides")
+    }
   };
 
 
@@ -24,8 +46,8 @@ window.onscroll = () => {
 
 
   
-  
- /* function play(){
+
+ function play(){
   document.getElementById("navs").classList.toggle("hide")
   document.getElementById("bod").classList.toggle("no-scroll")
   
@@ -35,7 +57,7 @@ window.onscroll = () => {
     behavior: 'smooth'
   });
  }
-  */
+
 
 
 function next() {
