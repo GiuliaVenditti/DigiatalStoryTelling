@@ -308,6 +308,33 @@ font-size: 12vw !important;
 }
 
 
+.single_content{
+  margin: auto;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.caption_top{
+  margin: auto;
+  
+  padding-right: 10vw;
+  padding-left: 10vw;
+  
+  overflow: scroll;
+}
+
+.graph_bottom{
+  width: 75vw;
+  flex-grow: 1;
+  margin:auto;
+ 
+  overflow: scroll;
+  background-color: #f8f9fa00;
+  
+}
+
 .biblio-slide-l-trasp{
   padding: 3%;
   padding-left: 7vw;
