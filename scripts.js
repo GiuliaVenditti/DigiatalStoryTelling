@@ -20,35 +20,6 @@ window.onscroll = () => {
   };
 
 
-/*   window.onscroll = () => {
-    let scrollTop = window.scrollY;
-    if(scrollTop <= 10){
-      document.getElementById("container-nav").classList.add("rehides")
-    }
-    if(scrollTop >= 900){
-      document.getElementById("container-nav").classList.remove("rehides")
-    }
-  };
-
-
- */
- 
-
-
-/*   
-
-function play(){
-  document.getElementById("navs").classList.toggle("hide")
-  document.getElementById("bod").classList.toggle("no-scroll")
-  
-  window.scrollBy({
-    top: window.innerHeight,
-    left: 0,
-    behavior: 'smooth'
-  });
- }
-
- */
 
 function next() {
   console.log("eeeeeey")
@@ -70,27 +41,3 @@ function prevoius() {
   });
 
 }
-/* const box = document.getElementById('coso');
-
-// 👇️ Change text color on mouseover
-box.addEventListener('mouseover', function handleMouseOver() {
-  box.style.color = 'red';
-});
-
-// 👇️ Change text color back on mouseout
-box.addEventListener('mouseout', function handleMouseOut() {
-  box.style.color = 'black';
-});  */
-
-
-/* const box = document.getElementById('box');
-
-// 👇️ Change text color on mouseover
-box.addEventListener('mouseover', function handleMouseOver() {
-  box.style.color = 'red';
-});
-
-// 👇️ Change text color back on mouseout
-box.addEventListener('mouseout', function handleMouseOut() {
-  box.style.color = 'black';
-});  */

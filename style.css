@@ -969,3 +969,12 @@ filter:invert(47%) sepia(89%) saturate(2476%) hue-rotate(5deg) brightness(90%) c
   border-radius: 50px 50px 50px 0;
   transform: rotate(45deg);
 }
+
+.dropdown-menu[data-bs-popper] {
+  top: 70% !important;
+  left: -40 !important;
+}
+
+.dropdown-menu {
+  background-color: rgb(160, 163, 222) !important;
+}
