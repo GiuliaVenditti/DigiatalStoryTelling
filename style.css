@@ -335,6 +335,25 @@ font-size: 12vw !important;
   
 }
 
+.double_graph_container {
+  width: 80vw;
+  /* height: 80vh; */
+  flex-grow: 1;
+  margin: auto;
+  overflow: scroll;
+  background-color: #f8f9fa00;
+}
+
+.double_graph {
+  display: flex;
+  height: 100%;
+}
+
+.in_graph{
+  flex-grow: 1;
+
+}
+
 .biblio-slide-l-trasp{
   padding: 3%;
   padding-left: 7vw;
