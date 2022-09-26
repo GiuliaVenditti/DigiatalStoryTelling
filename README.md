@@ -25,3 +25,8 @@ The project was built primarily using Python for data manipulation, Plotly for d
 * [Amazon prime's dataset](https://www.kaggle.com/datasets/shivamb/amazon-prime-movies-and-tv-shows) (2008-2021)
 
 ## License
+* Netflix's dataset was released under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/)
+* Amazon's dataset was released under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/)
+
+* Produced dataset was released under [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/)
+* Web site, and codes was released under [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/)
