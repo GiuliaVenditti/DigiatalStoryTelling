@@ -3,14 +3,11 @@ console.log("hey")
 
 window.onscroll = () => {
     let scrollTop = window.scrollY;
-    console.log("scrollTop")
-    console.log(scrollTop)
+   
     let docHeight = document.body.offsetHeight;
-    console.log("docHeight")
-    console.log(docHeight)
+    
     let winHeight = window.innerHeight;
-    console.log("winHeight")
-    console.log(winHeight)
+   
     let scrollPercent = scrollTop / (docHeight - winHeight);
     let scrollPercentRounded = Math.round(scrollPercent * 100);
     document.querySelector(
@@ -38,7 +35,7 @@ window.onscroll = () => {
  
 
 
-  
+/*   
 
 function play(){
   document.getElementById("navs").classList.toggle("hide")
@@ -51,7 +48,7 @@ function play(){
   });
  }
 
-
+ */
 
 function next() {
   console.log("eeeeeey")
