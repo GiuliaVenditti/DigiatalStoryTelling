@@ -51,8 +51,8 @@
 }
 
 .btn-primary{
-  background-color: #7c81e4 !important;
-  border-color:#7c81e4 !important;
+  background-color: #7C81E3 !important;
+  border-color:#7C81E3!important;
 }
 .btn-primary > a {
   color: white;
@@ -195,7 +195,9 @@ body{
   background-size: cover;
 }
 
-
+#team_slide, #team_slide > * > *{
+  background-color: #535691;
+}
 
 
 
@@ -211,7 +213,7 @@ iframe {
 }
 
 .blue_link:hover{
-  color: #7c81e4 !important;
+  background-color: #5f63b2 !important;
   text-decoration: underline !important;
 }
 
@@ -850,15 +852,18 @@ filter:invert(47%) sepia(89%) saturate(2476%) hue-rotate(5deg) brightness(90%) c
   background-color: rgba(68, 153, 136, 0) !important;
 }
 
+.button-style{
+  border-radius: .25rem!important;
+  padding: 0.9em !important;
+  border: none !important;
+}
+
 .text-button{
-  width: 8rem;
+  background-color:#9d90e2 !important;
+  border-color:#9d90e2 !important;
   position: fixed;
   right: 3rem;
-  margin-top: 3.5em;
-  border-radius: .25rem!important;
- 
-  border: none !important;
-
+  bottom: 3%;
 }
 
 .container-nav{
