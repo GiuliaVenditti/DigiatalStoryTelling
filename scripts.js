@@ -41,3 +41,12 @@ function prevoius() {
   });
 
 }
+
+$( "#show_graph" ).click(function() {
+  $('#first').toggle();
+  $('#second').toggle();
+  if ($('.change').text() == "Critics over Public")
+       $('.change').text("Public over Critics")
+    else
+       $('.change').text("Critics over Public");
+});
