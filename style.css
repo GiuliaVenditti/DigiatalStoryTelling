@@ -203,9 +203,11 @@ body{
 
 /* links colors */ 
 
-iframe {
-  overflow: hidden;
+a{
+  text-decoration: none;
+  color: #0F79AF;
 }
+
 .blue_link{
   text-decoration: none !important;
   font-weight: bold !important;
