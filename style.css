@@ -199,13 +199,22 @@ body{
   background-color: #535691;
 }
 
+.dropdown-item:hover{
+  background-color: transparent !important;
+}
+
 
 
 /* links colors */ 
 
-a{
-  text-decoration: none;
-  color: #0F79AF;
+a {
+  color: #7ced99 !important;
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: #7ced99 !important;
+  text-decoration: underline !important;
 }
 
 .blue_link{
@@ -216,7 +225,8 @@ a{
 
 .blue_link:hover{
   background-color: #5f63b2 !important;
-  text-decoration: underline !important;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .paragrap_yellow > p > .blue_link:hover{
